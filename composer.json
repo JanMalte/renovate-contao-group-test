@@ -1,0 +1,21 @@
+{
+    "name": "janmalte/renovate-contao-group-test",
+    "type": "project",
+    "license": "MIT",
+    "prefer-stable": true,
+    "require": {
+      "contao/conflicts": "@dev",
+      "contao/listing-bundle": "4.9.25",
+      "contao/manager-bundle": "4.9.25",
+      "contao/news-bundle": "4.9.25"
+    },
+    "config": {
+      "allow-plugins": {
+        "contao-components/installer": true,
+        "php-http/discovery": true,
+        "contao/manager-plugin": true
+      },
+      "sort-packages": true
+    }
+  }
+  

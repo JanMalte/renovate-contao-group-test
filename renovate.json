@@ -1,0 +1,22 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["config:base"],
+    "dependencyDashboard": true,
+    "dependencyDashboardApproval": true,
+    "packageRules": [
+      {
+        "description": "Group Contao CMS bundle packages",
+        "groupName": "Contao",
+        "matchPackagePatterns": ["^contao/.*-bundle"],
+        "matchManagers": ["composer"]
+      },
+      {
+        "description": "disable minor and major contao updates to stay with LTS release",
+        "matchPackagePatterns": ["^contao/.*-bundle"],
+        "matchManagers": ["composer"],
+        "matchUpdateTypes": ["major", "minor"],
+        "enabled": false
+      }
+    ]
+  }
+  
