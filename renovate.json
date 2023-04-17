@@ -3,6 +3,8 @@
     "extends": ["config:base"],
     "dependencyDashboard": true,
     "dependencyDashboardApproval": true,
+    "separateMultipleMajor": true,
+    "separateMinorPatch": true,
     "packageRules": [
       {
         "description": "Group Contao CMS bundle packages",
